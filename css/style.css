@@ -266,6 +266,10 @@ h1 {
     margin: 0 20px;
 }
 
+.header_content h1{
+    width: 50%;
+}
+
 .header_content p {
     animation-duration: 2s;
     animation-name: right-slidein;
@@ -274,11 +278,9 @@ h1 {
 }
 
 .header_content {
-    background-attachment: fixed; /* Parallax effect */
     background-position: center; /* Parallax effect */
     background-size: cover; /* Parallax effect */
-    /* color: white; */
-    height: 300px; /* Parallax effect */
+    height: 340px; /* Parallax effect */
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
     display: flex;
@@ -357,7 +359,7 @@ h1 {
     opacity: 0.7;
 }
 
-/* .sr_only {
+.sr_only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -366,9 +368,13 @@ h1 {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
-} */
+}
 
 @media screen and (min-width: 768px) {
+    .header_content h1{
+        width: 90%;
+    }
+
     .collapse {
         display: block !important;
     }
@@ -400,6 +406,10 @@ h1 {
 }
 
 @media screen and (min-width: 992px) {
+    .header_content {
+        background-attachment: fixed; /* Parallax effect */
+    }
+
     .container-fluid {
         width: min-content;
         margin: auto 0;
