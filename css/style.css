@@ -381,7 +381,7 @@ h1 {
 
     .nav_links {
         display: grid;
-        grid-template-columns: repeat(4, 165px);
+        grid-template-columns: repeat(4, 180px);
     }
 
     .flex_container {
