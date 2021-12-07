@@ -49,23 +49,38 @@
     </header>
     <main class="about" id="skip">
         <div class="form_container">
+            <h2>Contact Form</h2>
             <form action="https://formspree.io/f/xvodjerb" method="POST">
+              <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name">
-        
-                <label for="email">Your E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Your email">
-        
-                <label for="author">Author</label>
-                <input type="text" id="author" name="author" placeholder="Author of the photo">
+              </div>
 
+              <div class="form-floating mt-3 mb-3">  
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+                <label for="email">Your E-mail</label>
+              </div>
+
+              <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="author" name="author" placeholder="Author of the photo">
+                <label for="author">Photographer</label>
+              </div>
+
+              <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title of the photo">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="title" placeholder="Title of the photo">
-        
-                <label for="description_form">Your thoughts!</label>
-                <textarea id="description_form" name="description_form" placeholder="Description"></textarea>
-        
-                <input type="submit" value="Submit">
+              </div>
+
+              <div class="form-floating mt-3 mb-3">
+                <textarea id="description_form" class="form-control" name="description_form" placeholder="Description"></textarea>
+                <label for="description_form">Description</label>
+              </div>
+
+              <label for="img" id="imglabel">Select Photo:</label>
+              <input type="file" class="form-control" id="img" name="img" accept="image/*" >
+
+              <input type="submit" id="submit" class="btn btn-primary" value="Submit">
+              
             </form>
         </div>
     </main>
