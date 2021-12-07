@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,43 +47,47 @@
       </nav>
       <div class="header_content">
         <br><h1>My Photos</h1>
-        <p>Here is some photos that I've taken.</p><br>
+        <p>This is a project I've done for a course on digital photography in Spring 2021. The theme is contrast in Shanghai.</p><br>
       </div>
     </header>
     <main class="about" id="skip">
       <div class="photos" id="contrast">
         <h2>Contrast in Shanghai</h2>
 
-        <p class="photos_intro">This is a project I've done for a course on digital photography in Spring 2021. The theme is to capture contrast in Shanghai. I chose the contrast between old and new.<br>Shanghai is one of the most modernized metropolises in the world. However, when people walk around the city center of Shanghai, they could also see that it comprises history and vast changes that have happened since the last century. Just a few streets and blocks away from the modernized city center, lie some old and historic buildings, among which memories and lifestyles from the last century hidden, or to be forgotten...</p>
+        <p class="photos_intro"> Shanghai is one of the most modernized metropolises in the world. However, when people walk around the city center of Shanghai, they could also see that it comprises history and vast changes that have happened since the last century. Just a few streets and blocks away from the modernized city center, lie some old and historic buildings, among which memories and lifestyles from the last century hidden, or to be forgotten...</p>
         <br>
-
+        <button type="button" class="btn btn-secondary" data-filter="all">All</button>
+        <button type="button" class="btn btn-secondary" data-filter=".image1">Image 1</button>
+        <button type="button" class="btn btn-secondary" data-filter=".image2">Image 2</button>
+        <button type="button" class="btn btn-secondary" data-filter=".image3">Image 3</button>
+        <button type="button" class="btn btn-secondary" data-filter=".image4">Image 4</button>
         <div class="grid_container">
-          <h3 class="image1">Iteration of Houses</h3>
-          <a class="image1" href="images/1.jpg" data-lightbox="contrastInSH" data-title="Iteration of Houses" data-alt="Iteration of Houses">
+          <h3 class="mix image1">Iteration of Houses</h3>
+          <a class="mix image1" href="images/1.jpg" data-lightbox="contrastInSH" data-title="Iteration of Houses" data-alt="Iteration of Houses">
             <img src="images/1.jpg" alt="Iteration of Houses" />
           </a>
-          <p class="image1">
+          <p class="mix image1">
               This picture is taken in an old alley of Shanghai near Laoximen. The alley is built in the beginning of the 20th century and was renovated several times since then. Soon, it is going to be torn down and the place is going to be redesigned for other purposes. The road is already blocked almost everywhere and nobody lives here anymore. Beyond the end of the road, a few newly built housing estates stand, which contrasts with these unused houses where Shanghai citizens used to live many years ago.
           </p>
-          <h3 class="image2">Old Alley in Shanghai</h3>
-          <a class="image2" href="images/2.jpg" data-lightbox="contrastInSH" data-title="Old Alley in Shanghai" data-alt="Old Alley in Shanghai">
+          <h3 class="mix image2">Old Alley in Shanghai</h3>
+          <a class="mix image2" href="images/2.jpg" data-lightbox="contrastInSH" data-title="Old Alley in Shanghai" data-alt="Old Alley in Shanghai">
             <img src="images/2.jpg" alt="Old Alley in Shanghai" />
           </a>
-          <p class="image2">
+          <p class="mix image2">
               This picture is taken in an old alley in Shanghai near Laoximen. The alley is planned to be demolished in a few years. From the alley, we could see tangled wires, poles reached out from windows for hanging clothes and some modern buildings beyond the alley.
           </p>
-          <h3 class="image3">Urban Regeneration of Old Town in Shanghai</h3>
-          <a class="image3" href="images/3.jpg" data-lightbox="contrastInSH" data-title="Urban Regeneration of Old Town in Shanghai" data-alt="Urban Regeneration of Old Town in Shanghai">
+          <h3 class="mix image3">Urban Regeneration of Old Town in Shanghai</h3>
+          <a class="mix image3" href="images/3.jpg" data-lightbox="contrastInSH" data-title="Urban Regeneration of Old Town in Shanghai" data-alt="Urban Regeneration of Old Town in Shanghai">
             <img src="images/3.jpg" alt="Urban Regeneration of Old Town in Shanghai" />
           </a>
-          <p class="image3">
+          <p class="mix image3">
               This picture is taken around Yu Garden in the old town of Shanghai. The place is not far away from the prosperous city center of Shanghai with modern skyscrapers and was the birthplace of Shanghai history. The area with these historic buildings which used to accommodate many local Shanghai citizens are now regenerated into an commercial area among skyscrapers for sightseeing purpose.
           </p>
-          <h3 class="image4">Life among Ruins</h3>
-          <a class="image4" href="images/4.jpg" data-lightbox="contrastInSH" data-title="Life among Ruins" data-alt="Life among Ruins">
+          <h3 class="mix image4">Life among Ruins</h3>
+          <a class="mix image4" href="images/4.jpg" data-lightbox="contrastInSH" data-title="Life among Ruins" data-alt="Life among Ruins">
             <img src="images/4.jpg" alt="Life among Ruins" />
           </a>
-          <p class="image4">
+          <p class="mix image4">
               This picture is also taken in an old alley of Shanghai near Laoximen which is already in the process of demolition. In front of an old building, there are some messy electric wires. The whole place seems dead and lifeless. However, there are some green leaves on the wires. The newly grown leaves cling to the support they could get tightly and make me feel hope for new life in an early spring among these ruins.
           </p>
         </div>
@@ -91,6 +96,11 @@
     <footer>
       <p>University of Michigan School of Information <br/>
         &copy; Zhiyuan Zhang - Web Design 2021</p>
+      <div class="social_buttons">
+        <a href="https://github.com/zhiyuan-Z" class="fab fa-github" target="_blank"><span class="sr-only">Link to Github Profile</span></a>
+        <a href="https://www.instagram.com/will.zhiyuan.zhang/" class="fab fa-instagram" target="_blank"><span class="sr-only">Link to Instagram Profile</span></a>
+        <a href="https://www.linkedin.com/in/zhiyuan-zhang-817513224/" class="fab fa-linkedin" target="_blank"><span class="sr-only">Link to LinkedIn Profile</span></a>
+      </div>
     </footer>
     <script src="js/lightbox.js"></script>
     <script>
@@ -101,6 +111,11 @@
         'disableScrolling': true,
         'alwaysShowNavOnTouchDevices': true
       })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script>
+      var containerGrid = document.querySelector('.grid_container');
+      var mixer = mixitup(containerGrid);
     </script>
   </body>
 </html>

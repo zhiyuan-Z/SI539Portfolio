@@ -8,7 +8,6 @@ body {
     font-size: 20px;
     font-family: Geneva, Tahoma, sans-serif;
     line-height: 150%;
-    overflow-x: hidden;
 
     display: flex;
     flex-flow: column nowrap;
@@ -299,7 +298,7 @@ h1 {
     text-align: center;
 }
 
-.nav_item a {
+.nav_item a, .social_buttons a {
     text-decoration: none;
     font-size: 18px;
 }
@@ -312,6 +311,7 @@ h1 {
 
 .current_link a{
     text-transform: uppercase;
+    font-size: 17px;
 }
 
 .current_link a::before {
@@ -324,7 +324,7 @@ h1 {
 
 .grid_container {
     display: grid;
-    grid-template-rows: repeat(4, 48px auto auto);
+    grid-template-rows: repeat(12 auto);
     grid-row-gap: 10px;
     align-items: center;
     justify-content: center;
@@ -344,6 +344,30 @@ h1 {
     margin-bottom: 30px;
 }
 
+.shuffle {
+    color: white;
+    background-color: rgba(255,255,255,.4);
+}
+
+.fab {
+    padding: 6px;
+}
+
+.fab:hover, .fab:focus {
+    opacity: 0.7;
+}
+
+/* .sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+} */
+
 @media screen and (min-width: 768px) {
     .collapse {
         display: block !important;
@@ -351,7 +375,7 @@ h1 {
 
     .nav_links {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 165px);
     }
 
     .flex_container {
@@ -381,9 +405,9 @@ h1 {
         margin: auto 0;
     }
 
-    .nav_links {
+    /* .nav_links {
         width: 800px;
-    }
+    } */
 
     .navbar {
         flex-flow: row nowrap;
